@@ -1,6 +1,8 @@
+use xc.os/Argv
+
 @main
 fn main() {
-  applet := xc.os.Args[0] ?? ""
+  applet := Argv[0] ?? ""
   dispatch(applet)
 }
 
